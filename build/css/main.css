@@ -1,0 +1,77 @@
+/*My first css*/
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: 100vh;
+	margin: 0; 
+}
+#app{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0; 
+}
+
+.web-insert{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0; 
+}
+#main{
+	display: flex;
+	flex-grow:1;
+	border: 1px solid #fff;
+	max-height: 100vh;
+}
+#main *{
+	padding: 20px;
+}
+
+#options{
+	flex: 1 1 0%;
+	order: -1;
+	border: 1px solid #fff;
+}
+#input{
+	flex: 2 1 0%;
+	order:2;
+	border: 1px solid #fff;
+}
+#screen{
+	flex: 4 1 0%;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	border: 1px solid #fff;
+	overflow-y: auto;
+}
+
+#header, #footer{
+	text-align: center;
+	padding: 20px;
+	margin: 1em;
+}
+#header *{
+	flex: 1 1 100%;
+}
+#footer *{
+	flex-grow:1;
+}
+.webInput {
+	flex:1 1 85%;
+	font-size:150%;
+}
+.webInput:focus{
+	background-color: rgba(255,155,255,0.5);
+	color: #000;
+}
+.webButton {
+	flex:1 1 15%;
+	background-color: rgba(255,155,255,0.5);
+	color: #000;
+}
+.webButton:hover {
+	background-color: rgb(255, 155, 255, 0.25);
+}
